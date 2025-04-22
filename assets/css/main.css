@@ -63,6 +63,7 @@
 
 
 
+
 .oval-button {
   display: inline-block;
   padding: 10px 30px;
@@ -874,6 +875,7 @@ section,
   .portfolio .portfolio-filters li {
     font-size: 14px;
     margin: 0 0 10px 0;
+    /* text-align: justify; */
   }
 }
 
@@ -931,6 +933,49 @@ section,
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 0;
+}
+
+
+@media (max-width: 767px) {
+  
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; 
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      bottom: 10px;
+      left: 5%;
+      width: 100%;
+      /* height: 100%; */
+      border: 10px;
+    }
+}
+
+@media (max-width: 1260px) and (min-width: 767px){
+  
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 30%; 
+    height: 100%;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .video-wrapper iframe {
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+    width: 100%;
+    height: 100%;
+    border: 10px;
+  }
 }
 
 /*--------------------------------------------------------------
